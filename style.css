@@ -1,0 +1,163 @@
+*{
+margin: 0;
+padding: 0;
+font-family:  'Arial Narrow', Arial, sans-serif;    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffffff;
+}
+.container{
+    position: relative;
+}
+
+.container .cart {
+    position: relative ;
+    width: 320px;
+    height: 600px;
+    background: #333333 ;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.container .cart:before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background:  #0000ff ;
+ clip-path: circle(120px at 80% 20%);
+  transition: 1s ease-in-out; 
+}
+.container .cart:hover:before {
+    clip-path: circle(300px at 80% -30%);
+}
+.container .cart:after{
+content: "Zuyn";
+position: absolute;
+top: 50%;
+left: -20%;
+font-size: 12em;
+font-weight: 700;
+font-style: italic;
+color: rgba(255, 255, 255, 0.04);
+
+}
+.container .cart .image-profile{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:40%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 100%;
+    height: 50%;
+    transition: 0.5s;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    background-color: #0003a3;
+}
+.container .cart:hover .image-profile{
+    top:0%;
+    transform: translateY(0%);
+}
+
+.container .cart .image-profile img {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  }
+
+ .container .cart .contentProfile{
+    position: absolute;
+    bottom: 0;
+    text-align: center; 
+    height: 30%; 
+    width: 100%;
+    transition: 1s;
+    z-index: 10;
+} 
+.container .cart:hover .contentProfile{
+    height: 45%;
+}
+.container .cart .contentProfile h2{
+position: relative;
+font-weight: 600;
+letter-spacing: 1px;
+color: #ffffff;
+}
+.container .cart .contentProfile .birthday,
+.container .cart .contentProfile .phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.container .cart:hover .contentProfile .birthday{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+.container .cart:hover .contentProfile .phone{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 1s;
+}
+.container .cart .contentProfile .birthday h3,
+.container .cart .contentProfile .phone h3{
+   color: #ffffff;
+   font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+.container .cart .contentProfile .birthday span{
+    width: 30px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px; 
+    font-size: 14px;
+    font-weight: 800;
+    display: inline-block;
+    color: #111;
+    background: #ffffff;
+    margin: 0 5px;
+    transition:  0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.container .cart .contentProfile .birthday span:hover{
+    background: #10a9b4;
+}
+
+.container .cart .contentProfile .phone span{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    color: #ffffff;
+    transition: 1s;
+    transform: translateY(0px);
+
+}
+.container .cart .contentProfile a{
+    display: inline-block;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1.5s;
+}
+.container .cart:hover .contentProfile a{
+    opacity: 1;
+    transform: translateY(0px);
+}
