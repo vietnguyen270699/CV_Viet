@@ -37,6 +37,8 @@ html {
     pointer-events: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
     position: absolute;
+    transform: translate(-50%,-50%);
+   
     z-index: 15;
 }
 
