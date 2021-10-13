@@ -12,12 +12,15 @@ var project3 = document.getElementById("project3");
 var project_3 = document.getElementById("project_3");
 var project4 = document.getElementById("project4");
 var project_4 = document.getElementById("project_4");
+var project5 = document.getElementById("project5");
+var project_5 = document.getElementById("project_5");
 
 var lose = document.getElementsByClassName("lose_icon");
 var lose1 = document.getElementById('lose1');
 var lose2 = document.getElementById('lose2');
 var lose3 = document.getElementById('lose3');
 var lose4 = document.getElementById('lose4');
+var lose5 = document.getElementById('lose5');
 
 sideNav.style.right = "-140px";
 
@@ -59,6 +62,11 @@ project4.onclick = function () {
         project_4.style.visibility = "visible";
     }
 };
+project5.onclick = function () {
+    if (project_5.style.visibility = "hidden") {
+        project_5.style.visibility = "visible";
+    }
+};
 
 lose1.onclick = function () {
     if (project_1.style.visibility = "visible") {
@@ -78,5 +86,10 @@ lose3.onclick = function () {
 lose4.onclick = function () {
     if (project_4.style.visibility = "visible") {
         project_4.style.visibility = "hidden";
+    }
+};
+lose5.onclick = function () {
+    if (project_5.style.visibility = "visible") {
+        project_5.style.visibility = "hidden";
     }
 };

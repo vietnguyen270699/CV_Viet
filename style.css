@@ -779,6 +779,10 @@ color: #ffffff;
     position: absolute;
     z-index: 2;
 }
+.project-box #project_5 { 
+    position: absolute;
+    z-index: 2;
+}
 .project-box .project_detail .Title_Project{
     color: #fff;
     font-size: 30px;
